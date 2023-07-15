@@ -3,7 +3,7 @@ function getData(a)
 {
     url="https://reqres.in/api/users?page=1";
     fetch(url).then((response)=>{
-        return response.json(); // we can return jason nas well as parts
+        return response.json(); 
     }).then((data)=>{
        console.log(data);
        var value=data;       
@@ -38,7 +38,7 @@ function getData(a)
            var first1=(value['data'][5]['first_name']);
            var last1=(value['data'][5]['last_name']);
            document.getElementById('name6').innerHTML =first1+" "+last1;
-     /////mail
+    
       var mail1=(value['data'][0]['email']);
            document.getElementById('mail1').innerHTML=mail1;
            var mail2=(value['data'][1]['email']);
